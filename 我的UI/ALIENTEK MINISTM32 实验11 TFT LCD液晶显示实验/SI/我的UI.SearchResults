@@ -1,0 +1,5 @@
+---- UG_ButtonShow Matches (4 in 3 files) ----
+LCD.htm (f:\自动贩卖机项目\我的ui\alientek ministm32 实验11 tft lcd液晶显示实验\obj):<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UG_ButtonShow
+LCD.htm (f:\自动贩卖机项目\我的ui\alientek ministm32 实验11 tft lcd液晶显示实验\obj):<P><STRONG><a name="[dd]"></a>UG_ButtonShow</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, ugui.o(.text), UNUSED)
+Ugui.c (f:\自动贩卖机项目\我的ui\alientek ministm32 实验11 tft lcd液晶显示实验\ugui):UG_RESULT UG_ButtonShow(UG_WINDOW* wnd, UG_U8 id)
+Ugui.h (f:\自动贩卖机项目\我的ui\alientek ministm32 实验11 tft lcd液晶显示实验\ugui):UG_RESULT UG_ButtonShow( UG_WINDOW* wnd, UG_U8 id );
