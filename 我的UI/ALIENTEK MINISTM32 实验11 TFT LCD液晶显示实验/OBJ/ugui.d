@@ -3,7 +3,7 @@
 ..\obj\ugui.o: ..\SYSTEM\sys\sys.h
 ..\obj\ugui.o: ..\USER\stm32f10x.h
 ..\obj\ugui.o: ..\CORE\core_cm3.h
-..\obj\ugui.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\ugui.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\ugui.o: ..\USER\system_stm32f10x.h
 ..\obj\ugui.o: ..\USER\stm32f10x_conf.h
 ..\obj\ugui.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h

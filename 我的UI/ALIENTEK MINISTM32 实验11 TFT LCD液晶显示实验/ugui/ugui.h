@@ -31,7 +31,7 @@ typedef enum
 	FONT_TYPE_8BPP
 } FONT_TYPE;
 
-typedef struct
+ typedef struct
 {
    unsigned char* p;
    FONT_TYPE font_type;
@@ -93,6 +93,13 @@ typedef struct
 #ifdef USE_FONT_32X53
    extern const UG_FONT FONT_32X53;
 #endif
+#ifdef USE_FONT_ICON48
+   extern const UG_FONT FONT_ICON48;
+#endif		
+#ifdef USE_FONT_ICON24
+   extern const UG_FONT FONT_ICON24;
+#endif
+
 
 /* -------------------------------------------------------------------------------- */
 /* -- TYPEDEFS                                                                   -- */

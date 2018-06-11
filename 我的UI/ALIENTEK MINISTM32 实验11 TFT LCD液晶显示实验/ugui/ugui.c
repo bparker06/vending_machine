@@ -5870,8 +5870,8 @@ UG_RESULT UG_WindowCreate(UG_WINDOW* wnd, UG_OBJECT* objlst, UG_U8 objcnt, void(
 	wnd->objlst = objlst;
 	wnd->state = WND_STATE_VALID;
 #ifdef USE_COLOR_RGB888
-	wnd->fc = 0x000000;
-	wnd->bc = 0xF0F0F0;
+	wnd->fc = 0xFFFFFF;	
+	wnd->bc = 0x000000;
 #endif
 #ifdef USE_COLOR_RGB565
 	wnd->fc = 0x0000;
@@ -6720,7 +6720,7 @@ UG_RESULT UG_ButtonSetBackColor(UG_WINDOW* wnd, UG_U8 id, UG_COLOR bc)
 }
 
 UG_RESULT UG_ButtonSetAlternateForeColor(UG_WINDOW* wnd, UG_U8 id, UG_COLOR afc)
-{
+{	
 	UG_OBJECT* obj = NULL;
 	UG_BUTTON* btn = NULL;
 
@@ -6730,7 +6730,7 @@ UG_RESULT UG_ButtonSetAlternateForeColor(UG_WINDOW* wnd, UG_U8 id, UG_COLOR afc)
 	btn = (UG_BUTTON*)(obj->data);
 	btn->afc = afc;
 	obj->state |= OBJ_STATE_UPDATE | OBJ_STATE_REDRAW;
-
+	
 	return UG_RESULT_OK;
 }
 

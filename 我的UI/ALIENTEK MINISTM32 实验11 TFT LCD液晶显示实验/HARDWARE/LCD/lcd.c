@@ -656,7 +656,7 @@ void LCD_Set_Window(u16 sx,u16 sy,u16 width,u16 height)
 //该初始化函数可以初始化各种ALIENTEK出品的LCD液晶屏
 //本函数占用较大flash,用户可以根据自己的实际情况,删掉未用到的LCD初始化代码.以节省空间.
 void LCD_Init(void)
-{ 
+{ 		
  	GPIO_InitTypeDef GPIO_InitStructure;
  	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC|RCC_APB2Periph_GPIOB|RCC_APB2Periph_AFIO, ENABLE); //使能PORTB,C时钟和AFIO时钟
 	GPIO_PinRemapConfig(GPIO_Remap_SWJ_JTAGDisable , ENABLE);//开启SWD，失能JTAG
@@ -672,7 +672,7 @@ void LCD_Init(void)
 	GPIO_Init(GPIOB, &GPIO_InitStructure); //GPIOB
  
 	GPIO_SetBits(GPIOB,GPIO_Pin_All);
-
+	
 	delay_ms(50); // delay 50 ms 
 	LCD_WriteReg(0x0000,0x0001);
 	delay_ms(50); // delay 50 ms 
@@ -2682,8 +2682,12 @@ void LCD_Init(void)
 	}	
 	LCD_Display_Dir(0);		 	//默认为竖屏
 	LCD_LED=1;					//点亮背光
-	LCD_Clear(BLACK);		
+	LCD_Clear(WHITE);
 }  		  
+  	
+//清屏函数
+
+  		  
   
 //清屏函数
 //color:要清屏的填充色

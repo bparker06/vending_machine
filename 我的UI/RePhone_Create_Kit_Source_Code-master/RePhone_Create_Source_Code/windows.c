@@ -111,7 +111,7 @@ void time_update_callback(void)
     if (battery_status != g_battery_status) {
         g_battery_status = battery_status;
         UG_ButtonSetText(&g_home_window, 7, g_battery_info[battery_status]);
-    }
+    }	
 }
 
 static void home_window_callback(UG_MESSAGE *msg)
@@ -547,7 +547,7 @@ static void time_window_create(void)
             BTN_STYLE_2D | BTN_STYLE_TOGGLE_COLORS
                         | BTN_STYLE_NO_BORDERS);
 
-    UG_ButtonSetForeColor(&g_time_window, g_time_set_focus, 0x263238);
+    UG_ButtonSetForeColor(&g_time_window, g_time_set_focus, C_GRAY);		
     UG_ButtonSetBackColor(&g_time_window, g_time_set_focus, C_WHITE);
 }
 
